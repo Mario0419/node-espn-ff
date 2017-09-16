@@ -1,6 +1,6 @@
 {
   "name": "espn-ff-mx3",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ESPN Fantasy Football Scraper",
   "main": "js/index.js",
   "scripts": {
