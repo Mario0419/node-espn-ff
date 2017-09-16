@@ -6,7 +6,7 @@ Scrape basic league information from ESPN Fantasy football.
 
 Install the npm module.
 ```
-npm install espn-ff --save
+npm install espn-ff-mx3 --save
 ```
 
 Get some data!
