@@ -309,3 +309,42 @@ export interface IPlayerSeasonStatistics {
      */
     last_game_points: number;
 }
+
+/**
+ * 
+ * @export
+ * @interface IFantasyStanding
+ */
+export interface IFantasyStanding {
+
+    /**
+     * Team name
+     * 
+     * @type {string}
+     */
+    team: string;
+
+    /**
+     * Number of wins
+     * @type {number}
+     */
+    win: number;
+
+    /**
+     * Number of losses
+     * @type {number}
+     */
+    loss: number;
+
+    /**
+     * Number of ties
+     * @type {number}
+     */
+    tie: number;
+
+    /**
+     * Winning percentage
+     * @type {number}
+     */
+    pct: number
+}

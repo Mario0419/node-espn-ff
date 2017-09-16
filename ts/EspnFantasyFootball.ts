@@ -109,6 +109,14 @@ export default class EspnFantasyFootball {
         return this.espnGetAndParse('scoreboard', 'scoreboard', query, callback)
     }
 
+    /**
+     * Gets the standings of all teams
+     * @param callback 
+     */
+    public getStandings(callback: FetchParseCallback<types.IFantasyStanding[]>): void {
+        return this.espnGetAndParse('standings', 'standings', null, callback);
+    }
+
     private espnGetAndParse<T>(parser: string, fragment: string | string[], urlQuery: any, callback: FetchParseCallback<T>) {
         return this.espnGetRequest(fragment, urlQuery, (err, response, body) => {
             if (err) return callback(err);
